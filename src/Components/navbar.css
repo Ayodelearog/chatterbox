@@ -1,0 +1,88 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar .links {
+    /* background-color: red; */
+    margin: 40px 80px;
+    text-align: center;
+}
+/* .links a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+} */
+
+.links a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 700;
+
+    background:
+      linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+.links a:hover {
+    /* background-color: rgb(82, 85, 85); */
+    background-size: 0 3px, 100% 3px;
+}
+
+.Navbar .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 80px;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 2px white solid;
+}
+
+.user p {
+    font-weight: 700;
+    color: white;
+}
+
+.user button {
+    color: white;
+    border-radius: 4px;
+    padding: 6px 6px;
+    font-weight: 700;
+    border: 2px  solid;
+    background-color: lightskyblue;
+    margin-left: 30px;
+    margin-right: 20px;
+  
+}
+
+.user button:hover {
+    background-color:rgb(255, 255, 255);
+    color: lightskyblue;
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
