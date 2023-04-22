@@ -31,7 +31,7 @@ export const Home = () => {
     
     return (
         <div>
-            {postsList?.map((post) => {<PostComp post={post} /> }}
+            {postsList?.map((post) => {<PostComp post={post} /> }},
         </div>
     )
 }
